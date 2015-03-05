@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from myApp.models import Post
+from myApp import Post
 
 
 def blogShow(request, post_id):
