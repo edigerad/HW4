@@ -13,7 +13,7 @@ class PostResource(ModelResource):
         always_return_data = True
 
 class CommentResource(ModelResource):
-	post = fields.ForeignKey(PostResource,'post')
+    post = fields.ForeignKey(PostResource,'post')
     class Meta:
         queryset = Comment.objects.all()
         resource_name = 'comment'
